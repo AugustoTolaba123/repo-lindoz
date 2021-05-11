@@ -1,5 +1,8 @@
 package ar.edu.unju.fi.tp4.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Compra {
 	
 	private int id;
@@ -8,6 +11,28 @@ public class Compra {
 	public Compra() {
 		super();
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	public Compra(int id, int cantidad, double total) {
+		super();
+		this.id = id;
+		this.cantidad = cantidad;
+		this.total = total;
+	}
+
+
+
+
+
+
+
+
 	public int getId() {
 		return id;
 	}
