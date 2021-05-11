@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no, width=device-width,initial-scale=1">
+
+<title>Inicio</title>
+<link rel="stylesheet" th:href="@{/webjars/bootstrap/4.6.0-1/css/bootstrap.min.css}">
+
+</head>
+
+<body>
+ <header th:replace="/layouts/header :: header"></header>
+
+<div class="container">
+  <div class="row">
+     <div class="container row col -sm-12 col-md-10"></div>
+     <div class="card" style="width: 18rem; margin-left:2rem">
+     <img src="/images/paisaje2.jpg" class="card-img-top" alt="..." style="width: 7rem">
+  <div class="card-body">
+    <h5 class="card-title">Imagen</h5>
+    <p class="card-text">Esta es la imagen 1</p>
+    <a href="/images/paisaje2.jpg" class="btn btn-primary">Imagen 1</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem; margin-left:2rem">
+  <img src="/images/paisaje1.jpg" class="card-img-top" style="width: 4rem">
+  <div class="card-body">
+    <h5 class="card-title">Imagen</h5>
+    <p class="card-text">Esta es la imagen 2</p>
+    <a href="/images/paisaje1.jpg" class="btn btn-primary">Imagen 2</a>
+  </div>
+</div>
+
+   <div class="col  col-md-2">
+     <aside th:replace="/layouts/publicidad :: aside" style="width: 18rem; margin-left:2rem"></aside>
+   </div>
+
+      
+  </div>
+
+
+</div>
+
+
+
+ <footer th:replace="/layouts/footer :: footer"></footer>
+ 
+ 
+ <script type="text/javascript" th:src="@{/webjars/jquery/3.5.1/jquery.min.js}"></script>
+ <script type="text/javascript" th:src="@{/webjars/popper.js/1.16.1-lts/popper.min.js}"></script>
+ <script type="text/javascript" th:src="@{/webjars/bootstrap/4.6.0-1/js/bootstrap.min.js}"></script>
+ 
+ 
+</body>
+</html>
